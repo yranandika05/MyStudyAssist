@@ -1,0 +1,41 @@
+<div class="modal-header"><h4 class="modal-title">{{"newData" | translate}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()">
+  </button>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+    <label for="startdate">{{"modalStartDate" | translate}}</label>
+    <input type="date" class="form-control" id="startdate" [(ngModel)]="startDate" name="startDate" (input)="checkValidity()" required>
+    <small class="text-danger" *ngIf="startDate.trim() === ''">
+      Start date is required.
+    </small>
+    <br>
+    <label for="enddate">{{"modalEndDate" | translate}}</label>
+    <input type="date" class="form-control" id="enddate" [(ngModel)]="endDate" name="endDate" (input)="checkValidity()" required>
+    <small class="text-danger" *ngIf="endDate.trim() === ''">
+      End date is required.
+    </small>
+    <small class="text-danger" *ngIf="isEndDateBeforeStartDate()">
+      End date cannot be before the start date.
+    </small>
+
+    <ng-container *ngIf="planData.length > 0; else noSchedule">
+      <ul>
+        <li *ngFor="let course of planData">
+          <p>{{ course.day }}: {{ course.starttime }}-{{ course.endtime }} {{ course.type }}</p>
+        </li>
+      </ul>
+    </ng-container>
+
+    <ng-template #noSchedule>
+      <p>{{"noPlan" | translate}}</p>
+    </ng-template>
+
+
+
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss()">{{"modalClose" | translate}}</button>
+  <button type="button" class="btn btn-success" [disabled]="isSaveDisabled || isEndDateBeforeStartDate()" (click)="save()">{{"modalSave" | translate}}</button>
+</div>

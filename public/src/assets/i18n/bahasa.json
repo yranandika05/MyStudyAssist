@@ -1,0 +1,105 @@
+{
+    "_SECTION1_": "PANEL",
+
+    "welcome": "Selamat datang",
+    "message": "Statistik hari ini",
+    "dashboard": "Dashboard",
+    "panelScore": "Skor",
+    "calendar": "Kalender",
+    "simulation": "Simulasi",
+    "courses": "Kursus",
+    "settings": "Pengaturan",
+    "language": "Bahasa",
+
+
+    "_SECTION2_": "DASHBOARD",
+
+    "todayActivity": "Aktivitas hari ini",
+    "noActivity" : "Tidak ada aktivitas",
+    "activities": "Aktivitas",
+    "availableCourses": "Kursus yang tersedia",
+    "averageGrade": "Nilai rata-rata",
+    "studyPerformance": "Performa belajar",
+    "creditPoints": "Poin kredit",
+    "notification": "Pemberitahuan",
+    "missingModules": "Modul dari 3 Semester awal yang belum diambil",
+    "projectPhase": "Kamu dapat memasuki fase proyek",
+    "oneActivity": "aktivitas sedang / akan berjalan",
+    "numberOfActivities": "aktivitas sedang / akan berjalan",
+
+    "_SECTION3_": "SCORE TABLE",
+
+    "addNewScore": "Tambahkan nilai",
+    "addNewPredictionScore": "Tambah Prediksi" ,
+    "edit": "Edit",
+    "submitScore": "Submit",
+    "delete": "Hapus",
+    "code": "Kode",
+    "title": "Judul",
+    "score": "Skor",
+    "percentage": "Persentase",
+    "estimate": "Perkiraan skor",
+    "creditPoint": "Poin Kredit",
+    "averageValue": "Nilai rata-rata",
+    "averageEstimateScore": "Perkiraan nilai",
+    "estimateCreditPoint": "Perkiraan poin",
+    "action" : "Aksi",
+    "passed": "lulus",
+    "unpassed": "tidak lulus",
+
+
+    "_SECTION4_": "CALENDAR",
+
+
+
+    "_SECTION5_": "COURSES",
+
+    "searchInput": "Cari...",
+    "searchSemester": "Semua semester",
+
+
+    "_SECTION6_": "SETTINGS",
+
+    "personalInfo": "Informasi pribadi",
+    "firstName": "Nama Depan",
+    "lastName": "Nama Belakang",
+    "idNumber": "Nomor ID",
+    "university": "Universitas",
+    "department": "Departemen",
+    "faculty": "Fakultas",
+    "degree": "Gelar",
+    "save": "Simpan",
+    "resetPassword": "Setel ulang kata sandi",
+    "enterNewPassword": "Kata sandi baru",
+    "repeatNewPassword": "Ulangi kata sandi",
+    "logOut": "Keluar",
+
+
+    "_SECTION7_": "MODAL",
+
+    "newEntry": "Entri baru",
+    "newData": "Masukan data baru",
+    "modalTitle": "Judul",
+    "modalStartTime": "Waktu Mulai",
+    "modalEndTime": "Waktu Selesai",
+    "modalStartDate": "Tanggal Mulai",
+    "modalEndDate": "Tanggal Selesai",
+    "modalClose": "Tutup",
+    "modalSave": "Simpan",
+    "modalCode": "Kode",
+    "modalEstimate": "Perkiraan Skor",
+    "modalCreditPoint": "Perkiraan Poin",
+    "modalScore": "Skor",
+    "modalPercentage": "Persentase",
+    "langSelection": "Pilih bahasa",
+    "modalSubmitScore": "Submit",
+    "requirementWarning": "Anda belum mengambil modul yang diperlukan",
+    "invalidPercentage": "Harap isi persentase dengan angka 1-100",
+    "emptyPercentage": "Harap isi persentase dengan angka positif.",
+    "emptyInput": "Silakan isi kode, judul dan persentase.",
+    "scoreExist": "Modul sudah ada di tabel skor",
+    "courseCode" : "Kode kursus",
+    "courseName" : "Nama kursus",
+    "scoreFillNote" : "Harap lengkapi kode, judul dan persentase.",
+    "noPlan": "Jadwal tidak tersedia"
+  }

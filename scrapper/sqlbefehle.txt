@@ -1,0 +1,57 @@
+SQL-Befehle um die Tabellen der Datenbank zufüllen.
+Die SQL-Befehle funktionieren in diesem Zustand NUR auf meinem Laptop.
+Wenn Sie die Befehle ausprobieren wollen, müssen Sie die Pfade zu den CSV-Dateien ändern.
+
+#########################################Teacher##################################################
+\copy public.teacher(teachername) FROM 'C:/Users/phili/Desktop/Uni/4Semester/SWTP/teacher.csv' WITH (FORMAT CSV, DELIMITER '|', HEADER, ENCODING 'UTF8');
+
+
+\copy tempmodul(number, name, description, creditpoints, teachername, address, requirement) FROM 'C:/Users/phili/Desktop/Uni/4Semester/SWTP/module.csv' WITH (FORMAT csv, DELIMITER '|', HEADER true, HEADER, ENCODING 'UTF8');
+
+
+
+###################################################Module###########################################
+CREATE TEMPORARY TABLE tempmodul4 (
+  number VARCHAR(255),
+  name VARCHAR(255),
+  description VARCHAR(2550),
+  creditpoints INT,
+  teachername VARCHAR(2550),
+  address VARCHAR(255),
+  requirement VARCHAR(2550),
+  semester INT,
+  faculty VARCHAR(255),
+  degree VARCHAR(255)	
+);
+
+\copy tempmodul4 (number, name, description, creditpoints, teachername, address, requirement, semester, faculty, degree) FROM 'C:\Users\phili\Desktop\Uni\4Semester\SWTP\moduleAll.csv' WITH (FORMAT csv, DELIMITER '|', HEADER true, ENCODING 'UTF8');
+
+
+INSERT INTO module (number, name, description, creditpoints, teacherid, address, requirement, semester, facutliyid, degreeprogramid)
+SELECT tm.number, tm.name, tm.description, tm.creditpoints, t.teacherid, tm.address, tm.requirement, tm.semester, f.facultyid, d.degreeprogramid
+FROM tempmodul4 AS tm
+JOIN teacher AS t ON tm.teachername = t.teachername
+JOIN faculty AS f ON tm.faculty = f.name
+JOIN degreeprogram AS d ON tm.degree = d.name;
+
+
+
+###################################################Kurs###############################################
+CREATE TEMPORARY TABLE tempmodul3 (
+  day VARCHAR(255),
+  modulename VARCHAR(255),
+  type VARCHAR(50),
+  room VARCHAR(2550),
+  starttime VARCHAR(250),
+  endtime VARCHAR(250)
+);
+
+\copy tempmodul3 (day, modulename, type, room, starttime, endtime) FROM 'C:\Users\phili\Desktop\Uni\4Semester\SWTP\termine-fb-06-mni.csv' WITH (FORMAT csv, DELIMITER ';', HEADER true, ENCODING 'UTF8');
+
+
+INSERT INTO course (day, moduleid, typeid, room, starttime, endtime)
+SELECT tm.day, m.moduleid, t.typeid, tm.room, tm.starttime, tm.endtime
+FROM tempmodul3 AS tm
+JOIN type AS t ON tm.type = t.description
+JOIN module AS m ON tm.modulename = m.name;
+######################################################################################################

@@ -1,0 +1,129 @@
+<div class="dashboard">
+  <div class="row d-flex">
+    <!--ACTIVITY CARD-->
+    <div class="card activity" routerLink="/panel/calendar">
+      <div class="card-body">
+        <div class="card-title">
+          <i class="fa-solid fa-calendar-days fa-lg"></i>
+          <div class="title">
+            <h5>{{ "todayActivity" | translate }}</h5>
+            <p *ngIf="activityData && activityData.length == 1">{{activityData.length}} {{"oneActivity" | translate}}</p>
+            <p *ngIf="activityData && activityData.length > 1">{{activityData.length}} {{"numberOfActivities" | translate}}</p>
+          </div>
+        </div>
+        <h1 style="text-align: center" *ngIf="activityData && activityData.length > 0">{{ activityData[0].title }}</h1>
+      </div>
+      <div class="card-footer d-flex justify-content-between" *ngIf="activityData && activityData.length > 0">
+        <div class="time d-flex justify-content-center align-items-center">
+          <i class="fa-regular fa-clock fa-xl" style="margin-right: 15px"></i>
+          <p>{{ activityData[0].startTime }} - {{ activityData[0].endTime }}</p>
+        </div>
+        <div class="room d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-door-open fa-xl" style="margin-right: 15px"></i>
+          <p>{{ activityData[0].room }}</p>
+        </div>
+      </div>
+      <div class="card-body" *ngIf="!activityData || activityData.length === 0">
+        <h3 class="text-center">{{"noActivity" | translate }}</h3>
+      </div>
+    </div>
+
+    <!--COURSES CARD-->
+    <div class="card activity grade courses "(click)="course()">
+      <div class="card-body">
+        <div class="card-title">
+          <i class="fa-solid fa-book fa-lg"></i>
+          <div class="title">
+            <h5>{{"availableCourses" | translate }}</h5>
+            <p class="note">SoSe 2023</p>
+          </div>
+        </div>
+        <h1 >MNI</h1>
+      </div>
+      <div class="card-footer d-flex justify-content-between" >
+        <div class="link d-flex justify-content-center align-items-center" >
+          <i class="fa-solid fa-link fa-xl" style="margin-right: 15px; padding-left: 20px"></i>
+          <p>{{ degreeProgramName }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!--GRADE CARD-->
+    <div class="card activity" routerLink="/panel/score">
+      <div class="card-body">
+        <div class="card-title">
+          <i class="fa-solid fa-chart-simple fa-lg"></i>
+          <div class="title">
+            <h5>{{"averageGrade" | translate }}</h5>
+            <p class="note">4th Semester</p>
+          </div>
+        </div>
+        <h1 style="padding-left: 20px">{{getAverageScore()}}</h1>
+      </div>
+      <div class="card-footer d-flex justify-content-between" >
+        <div class="performance d-flex justify-content-center align-items-center">
+        </div>
+        <div class="score d-flex justify-content-center align-items-center">
+          <p style="padding-right: 50px"> {{"percentage" | translate}}: {{getAveragePercentage()}} % </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row d-flex">
+
+    <!--CREDIT POINTS CARD-->
+    <div class="card grade credit-points" style="cursor: auto !important;">
+      <div class="card-body">
+        <div class="card-title">
+          <h3>{{"creditPoints" | translate }}</h3>
+        </div>
+        <div class=" credit d-flex justify-content-center align-items-center">
+          <div class="crp-bar">
+            <div class="outer">
+              <div class="inner">
+                <h4 id="number">
+                  {{ percentage | number:'1.0-0' }}%
+                </h4>
+              </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+              <defs>
+                 <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#2E1AC9" />
+                    <stop offset="100%" stop-color="#3D5A80" />
+                 </linearGradient>
+              </defs>
+              <circle cx="80" cy="80" r="70" stroke-linecap="round" [style.--progressvalue]="dashoffsetVal"/>
+            </svg>
+          </div>
+        </div>
+        <div class="w-100 d-flex justify-content-center align-items-center" style="text-align: center">
+          <h1 style="color: #4834d4; padding-right: 10px">{{getTotalCreditPoint()}}</h1>
+          <h4 style="color: black">/ 180</h4>
+        </div>
+      </div>
+
+    </div>
+
+    <!--NOTIFICATION CARD-->
+    <div class="card credit-points" style="cursor: default !important;">
+      <div class="card-body">
+        <div class="card-title">
+          <h3>{{"notification" | translate }}</h3>
+        </div>
+        <p class="notification-title">{{"missingModules" | translate}}:</p>
+        <div class="notification-list">
+          <ul>
+            <li *ngFor="let module of module3Semester">{{module.code}} - {{module.title}}</li>
+          </ul>
+        </div>
+        <p class="pt-4" *ngIf="totalCreditPoint >= 120">CrP: {{totalCreditPoint}}, {{"projectPhase" | translate}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+

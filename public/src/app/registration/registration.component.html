@@ -1,0 +1,103 @@
+<div class="container-fluid">
+  <div class="row" style="height: 100%; width: 100%">
+    <div class="col-md-5 col-sm12">
+      <div class="text-info">
+        <h1>My Study Assist</h1>
+
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <h1>Plan your Studies</h1>
+            <q> Perfect for your study plan with My Study Assist</q>
+          </div>
+          <div class="mySlides">
+            <h1>Manage your score</h1>
+            <q> Easily manage your score that you have acquire</q>
+          </div>
+          <div class="mySlides">
+            <h1>Have a great uni journey </h1>
+            <q> Easily manage your score that you have acquire</q>
+          </div>
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot" (click)="currentSlide(1)"></span>
+            <span class="dot" (click)="currentSlide(2)"></span>
+            <span class="dot" (click)="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 col-sm-12 d-flex align-items-center justify-content-center" >
+      <div class="login-container ">
+        <h2 class="welcome-text" style="color: #4834d4">WELCOME TO MY STUDY ASSIST</h2>
+        <p class="mb-5">Please register your account ID and your password</p>
+        <form>
+          <div class="row">
+            <div class="col-6 mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control border border-primary" id="firstName"  placeholder="Enter Your First Name" #firstName>
+            </div>
+            <div class="col-6 mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control border border-primary" id="lastName" placeholder="Enter Your Last Name" #lastName>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 mb-3">
+              <label for="studentId" class="form-label">Student ID</label>
+              <input type="text" class="form-control border border-primary" id="StudentId" placeholder="Enter Your Student ID" #studentId>
+            </div>
+            <div class="col-6 mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control border border-primary" id="username" placeholder="Enter Your Username" #username>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control border border-primary" id="email" placeholder="Enter Your Email" #email>
+          </div>
+
+          <div class="mb-3">
+            <label for="university" class="form-label">University</label>
+            <select class="form-select" id="university" aria-label="Default select example" #university>
+              <option selected value="THM">THM</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <div class="col-6 mb-3">
+              <label for="faculty" class="form-label">Faculty</label>
+              <select class="form-select" id="faculty" aria-label="Default select example" #faculty>
+                <option *ngFor="let faculty of facultyList" [value]="faculty.facultyid">{{ faculty.name }}</option>
+              </select>
+            </div>
+            <div class="col-6 mb-3">
+              <label for="degree" class="form-label">Degree</label>
+              <select class="form-select" id="degree" aria-label="Default select example" #degree>
+                <option *ngFor="let degree of degreeProgramList" [value]="degree.degreeprogramid">{{ degree.name }}</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="enterNewPassword" class="form-label">Enter New Password</label>
+            <input type="password" class="form-control border border-primary" id="enterNewPassword" placeholder="New Password" #pass>
+          </div>
+          <div class="mb-3">
+            <label for="repeatNewPassword" class="form-label">Repeat New Password</label>
+            <input type="password" class="form-control border border-primary" id="repeatNewPassword" placeholder="New Password" #repeatedPass>
+          </div>
+          <div class="d-grid">
+            <button class="btn btn-primary" style="font-weight: bold; background-color: #256AA8" type="submit" (click)="signUp(firstName.value, lastName.value, studentId.value, username.value, email.value, university.value, faculty.value, degree.value, pass.value, repeatedPass.value)">SIGN UP</button>
+          </div>
+        </form>
+        <div class="mt-3">
+          <p class="mb-0  text-center">Already have an account?
+            <a class="text-primary fw-bold" href="" routerLink="/login" >Sign In</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

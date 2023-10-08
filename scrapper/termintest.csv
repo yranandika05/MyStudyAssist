@@ -1,0 +1,194 @@
+day;modulename;type;room;starttime;endtime
+Montag;Compilerbau;Vorlesung;A20.0.07;08:00;09:30
+Montag;Softwaretechnik-Projekt;Praktikum;A20.0.08;08:00;09:30
+Montag;Objektorientierte Programmierung;Vorlesung;A20.1.36;09:50;11:20
+Montag;Fahrerassistenzsysteme;Seminaristischer Unterricht;A12.0.11;09:50;11:20
+Montag;Lineare Algebra;Ãœbung;A10.2.05;09:50;11:20
+Montag;Statistik und Datenanalyse;Ãœbung;A20.1.08;09:50;11:20
+Montag;Compilerbau;Praktikum;A20.0.08;09:50;11:20
+Montag;Softwaretechnik-Projekt;Praktikum;A20.2.09;09:50;11:20
+Montag;Mikroprozessortechnik;Vorlesung;A12.1.16;09:50;11:20
+Montag;Softwaretechnik-Projekt;Praktikum;A20.1.09;09:50;11:20
+Montag;Objektorientierte Programmierung;Ãœbung;A20.1.36;11:30;13:00
+Montag;Compilerbau;Praktikum;A20.0.08;11:30;13:00
+Montag;Mikroprozessortechnik;Vorlesung;A12.1.16;11:30;13:00
+Montag;Statistik und Datenanalyse;Ãœbung;A20.1.08;11:30;13:00
+Montag;Softwaretechnik-Projekt;Praktikum;A20.1.09;11:30;13:00
+Montag;Android-Praktikum: Anwendungsentwicklung;Praktikum;A10.7.11;11:30;13:00
+Montag;Fahrerassistenzsysteme;Seminaristischer Unterricht;A12.0.11;11:30;13:00
+Montag;LPIC-1: Linux Administrator;Seminaristischer Unterricht;ONLINE;11:30;13:00
+Montag;Cybersicherheit im Unternehmen;Seminaristischer Unterricht;A10.8.08;11:30;13:00
+Montag;Prakt. Konz. modern. SW-Entwicklung;Praktikum;A20.0.09;14:00;15:30
+Montag;Android-Praktikum: Anwendungsentwicklung;Praktikum;A10.7.11;14:00;15:30
+Montag;LPIC-1: Linux Administrator;Seminaristischer Unterricht;ONLINE;14:00;15:30
+Montag;Hauptseminar;Seminar;A20.1.08;14:00;15:30
+Montag;Cybersicherheit im Unternehmen;Seminaristischer Unterricht;A10.8.08;14:00;15:30
+Montag;Praxisnahe Anwendungen humanoide Roboter;Seminaristischer Unterricht;C14.0.05;14:00;15:30
+Montag;Compilerbau;Praktikum;A20.0.08;14:00;15:30
+Montag;Naturwissenschaftliche und technische Grundlagen;Tutorium;D14.0.03;14:00;15:30
+Montag;Hauptseminar;Seminar;A12.1.16;14:00;15:30
+Montag;Statistik und Datenanalyse;Ãœbung;A10.2.01;14:00;15:30
+Montag;Mikroprozessortechnik;Praktikum;A12.0.11, A12.0.12;14:00;15:30
+Montag;Diskrete Mathematik;Ãœbung;A20.0.07;15:45;17:15
+Montag;Algorithmen und Datenstrukturen;Vorlesung;A20.1.36;15:45;17:15
+Montag;Mikroprozessortechnik;Praktikum;A12.0.11, A12.0.12;15:45;17:15
+Montag;Prakt. Konz. modern. SW-Entwicklung;Praktikum;A20.0.09;15:45;17:15
+Montag;Betriebsysteme;Praktikum;A20.0.08;15:45;17:15
+Montag;Wissenschaftliches Arbeiten;Seminaristischer Unterricht;A20.1.08;15:45;17:15
+Montag;Grundlagen der KÃ¼nstlichen Intelligenz;Vorlesung;A12.3.05;15:45;17:15
+Montag;Hauptseminar;Seminar;A12.2.09;15:45;17:15
+Montag;Praxisnahe Anwendungen humanoide Roboter;Seminaristischer Unterricht;C14.0.05;15:45;17:15
+Montag;Algorithmen und Datenstrukturen;Ãœbung;A20.0.08;17:30;19:00
+Montag;Prakt. Konz. modern. SW-Entwicklung;Praktikum;A20.0.09;17:30;19:00
+Montag;Praxisnahe Anwendungen humanoide Roboter;Seminaristischer Unterricht;C14.0.05;17:30;19:00
+Montag;Diskrete Mathematik;Vorlesung;A20.1.36;17:30;19:00
+Dienstag;Softwaretechnik-Projekt;Praktikum;A20.2.09;08:00;09:30
+Dienstag;Grundlagen des Cloud Computing;Seminaristischer Unterricht;A20.1.09;08:00;09:30
+Dienstag;Cross-Platform Development;Seminaristischer Unterricht;A20.0.08;08:00;09:30
+Dienstag;Praktikum Webtechnologien;Praktikum;A20.1.08;08:00;09:30
+Dienstag;Grundlagen der Informatik;Ãœbung;A20.2.10;08:00;09:30
+Dienstag;Prakt. Eingebet.Sys.;Praktikum;A12.0.11, A12.1.11;09:50;11:20
+Dienstag;Rechnernetze und EinfÃ¼hrung in verteilte Systeme;Tutorium;A10.8.20;09:50;11:20
+Dienstag;Softwaretechnik-Projekt;Praktikum;A20.2.09;09:50;11:20
+Dienstag;Webbasierte Systeme;Praktikum;A20.0.09;09:50;11:20
+Dienstag;Machine Learning;Seminaristischer Unterricht;D15.0.02;09:50;11:20
+Dienstag;Grundlagen des Cloud Computing;Seminaristischer Unterricht;A20.1.09;09:50;11:20
+Dienstag;Cross-Platform Development;Seminaristischer Unterricht;A20.0.08;09:50;11:20
+Dienstag;Praktikum Webtechnologien;Praktikum;A20.1.08;09:50;11:20
+Dienstag;Funktionale Programmierung;Seminaristischer Unterricht;A20.0.09;11:30;13:00
+Dienstag;EinfÃ¼hrung in Eingebettete Systeme;Praktikum;A10.4.01;11:30;13:00
+Dienstag;Grundlagen der Informatik;Vorlesung;A20.1.36;14:00;15:30
+Dienstag;Digitaltechnik;Seminaristischer Unterricht;A12.3.05;14:00;15:30
+Dienstag;Compilerbau;Vorlesung;A20.0.07;14:00;15:30
+Dienstag;Webbasierte Systeme;Praktikum;A20.0.09;14:00;15:30
+Dienstag;Hauptseminar;Seminaristischer Unterricht;A10.8.22;14:00;15:30
+Dienstag;Offensive IT-Sicherheit;Praktikum;A10.2.03;14:00;15:30
+Dienstag;Hauptseminar;Seminaristischer Unterricht;A20.2.10;14:00;15:30
+Dienstag;Hauptseminar;Seminaristischer Unterricht;A20.2.09;14:00;15:30
+Dienstag;Grundlagen der Informatik;Ãœbung;A20.2.09;15:45;17:15
+Dienstag;Grundlagen der Informatik;Ãœbung;A20.2.10;15:45;17:15
+Dienstag;Recht fÃ¼r Informatiker/innen;Vorlesung;A20.0.07;15:45;17:15
+Dienstag;Swift-Programmierung unter iOS;Seminaristischer Unterricht;A10.7.01;15:45;17:15
+Dienstag;Offensive IT-Sicherheit;Praktikum;A10.2.03;15:45;17:15
+Dienstag;Softwaretechnik-Projekt;Praktikum;A20.0.09;15:45;17:15
+Dienstag;Swift-Programmierung unter iOS;Seminaristischer Unterricht;A10.7.01;17:30;19:00
+Dienstag;Softwaretechnik-Projekt;Praktikum;A20.0.09;17:30;19:00
+Dienstag;Grundlagen der KÃ¼nstlichen Intelligenz;Ãœbung;A20.0.08;17:30;19:00
+Dienstag;Grundlagen der Informatik;Ãœbung;A20.2.09;17:30;19:00
+Dienstag;Grundlagen der Informatik;Ãœbung;A20.2.10;17:30;19:00
+Mittwoch;Datenbanksysteme;Vorlesung;A20.0.07;08:00;09:30
+Mittwoch;Diskrete Mathematik;Vorlesung;A20.1.36;08:00;09:30
+Mittwoch;Entwicklung mobiler Applikationen;Praktikum;A20.2.10;08:00;09:30
+Mittwoch;Industrie 4.0 - EinfÃ¼hrung, Konzepte und Technologien;Seminaristischer Unterricht;A20.1.08;08:00;09:30
+Mittwoch;Analysis und numerische Methoden;Vorlesung;A12.3.05;08:00;09:30
+Mittwoch;Funktionale Programmierung;Ãœbung;A20.0.09;09:50;11:20
+Mittwoch;Diskrete Mathematik;Ãœbung;A10.4.01;09:50;11:20
+Mittwoch;Webbasierte Systeme;Vorlesung;A12.3.05;09:50;11:20
+Mittwoch;Diskrete Mathematik;Ãœbung;A20.2.09;09:50;11:20
+Mittwoch;Datenbanksysteme;Vorlesung;A20.0.07;09:50;11:20
+Mittwoch;Entwicklung mobiler Applikationen;Praktikum;A20.2.10;09:50;11:20
+Mittwoch;Industrie 4.0 - EinfÃ¼hrung, Konzepte und Technologien;Seminaristischer Unterricht;A20.1.08;09:50;11:20
+Mittwoch;Diskrete Mathematik;Ãœbung;A20.2.09;11:30;13:00
+Mittwoch;Objektorientierte Programmierung;Praktikum;A20.0.08, A20.0.09, A20.1.08, A20.1.09;11:30;13:00
+Mittwoch;Rechnersystem- und Prozessor-Architekturen;Seminaristischer Unterricht;A10.6.08;11:30;13:00
+Mittwoch;Haptische Benutzerschnittstellen;Seminaristischer Unterricht;A12.0.11;11:30;13:00
+Mittwoch;Datenbanksysteme;Ãœbung;A20.2.10;11:30;13:00
+Mittwoch;Lineare Algebra;Vorlesung;A12.3.04;11:30;13:00
+Mittwoch;Lineare Algebra;Vorlesung;A20.1.36;14:00;15:30
+Mittwoch;Rechnersystem- und Prozessor-Architekturen;Seminaristischer Unterricht;A10.6.08;14:00;15:30
+Mittwoch;Objektorientierte Programmierung;Praktikum;A20.0.08, A20.0.09, A20.1.08, A20.1.09;14:00;15:30
+Mittwoch;Haptische Benutzerschnittstellen;Seminaristischer Unterricht;A12.0.11;14:00;15:30
+Mittwoch;Datenbanksysteme;Ãœbung;A20.2.09;14:00;15:30
+Mittwoch;Lerngestaltung, PrÃ¼fungsvorbereitung und StressbewÃ¤ltigung im Studium;Seminaristischer Unterricht;A12.1.16;14:00;15:30
+Mittwoch;Betriebsysteme;Vorlesung;A20.0.07;14:00;15:30
+Mittwoch;Naturwissenschaftliche und technische Grundlagen;Vorlesung;D15.0.01, D15.0.03;15:45;17:15
+Mittwoch;Lineare Algebra;Ãœbung;A20.2.09;15:45;17:15
+Mittwoch;Machine Learning;Seminaristischer Unterricht;D15.0.02;15:45;17:15
+Mittwoch;Betriebsysteme;Praktikum;A20.1.08;15:45;17:15
+Mittwoch;Datenbanksysteme;Ãœbung;A12.1.16;15:45;17:15
+Mittwoch;Softwaretechnik-Projekt;Praktikum;A20.0.08;15:45;17:15
+Mittwoch;Lineare Algebra;Ãœbung;A20.0.09;15:45;17:15
+Mittwoch;Lerngestaltung, PrÃ¼fungsvorbereitung und StressbewÃ¤ltigung im Studium;Seminaristischer Unterricht;A20.1.09;15:45;17:15
+Mittwoch;Naturwissenschaftliche und technische Grundlagen;Ãœbung;D15.0.01;17:30;19:00
+Mittwoch;Lineare Algebra;Ãœbung;A20.2.09;17:30;19:00
+Mittwoch;Softwaretechnik-Projekt;Praktikum;A20.0.08;17:30;19:00
+Mittwoch;Lineare Algebra;Ãœbung;A20.0.09;17:30;19:00
+Mittwoch;Datenbanksysteme;Ãœbung;A12.1.16;17:30;19:00
+Donnerstag;Betriebsysteme;Praktikum;A20.2.09;08:00;09:30
+Donnerstag;Compilerbau;Praktikum;A20.1.08;08:00;09:30
+Donnerstag;Rechnernetze und Einf+hrung in verteilte Systeme;Ãœbung;A20.2.10;08:00;09:30
+Donnerstag;Programmierung interaktiver Systeme;Vorlesung;A20.1.36;08:00;09:30
+Donnerstag;Deep Learning auf biologischen Sequenzen;Seminaristischer Unterricht;A12.2.09;08:00;09:30
+Donnerstag;Rechnernetze und Einführung in verteilte Systeme;Vorlesung;A20.0.07;09:50;11:20
+Donnerstag;Betriebsysteme;Praktikum;A20.2.09;09:50;11:20
+Donnerstag;Programmierung interaktiver Systeme;Übung;A20.1.36;09:50;11:20
+Donnerstag;Statistik und Datenanalyse;Vorlesung;A20.1.07;09:50;11:20
+Donnerstag;Einführung IT-Security: Kryptografie, Software und Systemsicherheit;Seminaristischer Unterricht;A20.2.10;09:50;11:20
+Donnerstag;Deep Learning auf biologischen Sequenzen;Seminaristischer Unterricht;A12.2.09;09:50;11:20
+Donnerstag;Compilerbau;Praktikum;A20.1.08;09:50;11:20
+Donnerstag;Betriebsysteme;Vorlesung;A20.1.36;11:30;13:00
+Donnerstag;Webbasierte Systeme 2;Seminaristischer Unterricht;A10.8.20;11:30;13:00
+Donnerstag;Rechnernetze und Einführung in verteilte Systeme;Übung;A20.2.09;11:30;13:00
+Donnerstag;Unternehmensorganisation;Seminaristischer Unterricht;A10.2.01;11:30;13:00
+Donnerstag;Programmierung interaktiver Systeme;Praktikum;A20.0.09;11:30;13:00
+Donnerstag;Softwaretechnik;Vorlesung;A12.3.04;11:30;13:00
+Donnerstag;Rechnernetze und Einführung in verteilte Systeme;Übung;A20.1.09;11:30;13:00
+Donnerstag;Programmierung interaktiver Systeme;Praktikum;A20.1.08;11:30;13:00
+Donnerstag;Analysis und numerische Methoden;Übung;A12.3.05;11:30;13:00
+Donnerstag;Einführung IT-Security: Kryptografie, Software und Systemsicherheit;Praktikum;A20.2.10;11:30;13:00
+Donnerstag;Unternehmensorganisation;Seminaristischer Unterricht;A10.2.01;14:00;15:30
+Donnerstag;Programmierung interaktiver Systeme;Praktikum;A20.0.09;14:00;15:30
+Donnerstag;Softwaretechnik;Übung;A10.2.03;14:00;15:30
+Donnerstag;Objektorientierte Programmierung;Praktikum;A20.0.08, A20.2.10, A20.1.08;14:00;15:30
+Donnerstag;Rechnernetze und Einführung in verteilte Systeme;Übung;A21.0.01;14:00;15:30
+Donnerstag;Programmierung interaktiver Systeme;Praktikum;A20.2.09;14:00;15:30
+Donnerstag;DV-orientierte Betriebswirtschaftslehre;Vorlesung;A20.1.36;14:00;15:30
+Donnerstag;Grundlagen der Künstlichen Intelligenz;Übung;A20.1.09;14:00;15:30
+Donnerstag;Requirements Engineering;Seminaristischer Unterricht;A21.0.03;14:00;15:30
+Donnerstag;Naturwissenschaftliche und technische Grundlagen;Übung;D15.0.02;14:00;15:30
+Donnerstag;Webbasierte Systeme 2;Seminaristischer Unterricht;A10.8.20;14:00;15:30
+Donnerstag;Programmierung interaktiver Systeme;Praktikum;A20.0.08;15:45;17:15
+Donnerstag;Wissenschaftliches Arbeiten;Seminaristischer Unterricht;A20.2.09;15:45;17:15
+Donnerstag;Einführung IT-Security: Kryptografie, Software und Systemsicherheit;Praktikum;A20.2.10;15:45;17:15
+Donnerstag;Naturwissenschaftliche und technische Grundlagen;Übung;D15.0.02;15:45;17:15
+Donnerstag;Requirements Engineering;Seminaristischer Unterricht;A21.0.03;15:45;17:15
+Donnerstag;Datenbanksysteme;Übung;A10.2.02;15:45;17:15
+Donnerstag;Einführung in Eingebettete Systeme;Vorlesung;A10.4.04;15:45;17:15
+Donnerstag;Programmierung interaktiver Systeme;Praktikum;A20.0.09;15:45;17:15
+Donnerstag;Softwaretechnik;Übung;A10.2.03;15:45;17:15
+Donnerstag;Softwaretechnik;Übung;A10.2.03;17:30;19:00
+Freitag;Konzepte systemnaher Programmierung;Vorlesung;A12.3.05;08:00;09:30
+Freitag;Algorithmen und Datenstrukturen;Übung;A20.0.09;08:00;09:30
+Freitag;Algorithmen und Datenstrukturen;Übung;A20.0.08;08:00;09:30
+Freitag;English for STEM 1;Seminaristischer Unterricht;C13.1.12;08:00;09:30
+Freitag;English for STEM 2;Seminaristischer Unterricht;C13.1.12;08:00;09:30
+Freitag;English for STEM 3;Seminaristischer Unterricht;C13.1.12;08:00;09:30
+Freitag;Online Payment Solutions;Seminaristischer Unterricht;A20.2.09;08:00;09:30
+Freitag;Entwicklung Sicherer Systeme;Seminaristischer Unterricht;A21.0.01;08:00;09:30
+Freitag;Projektmanagement;Vorlesung;A20.1.07;09:50;11:20
+Freitag;Algorithmen und Datenstrukturen;Übung;A20.0.09;09:50;11:20
+Freitag;Algorithmen und Datenstrukturen;Übung;A20.0.08;09:50;11:20
+Freitag;English for STEM 1;Seminaristischer Unterricht;C13.1.12;09:50;11:20
+Freitag;English for STEM 2;Seminaristischer Unterricht;C13.1.12;09:50;11:20
+Freitag;English for STEM 3;Seminaristischer Unterricht;C13.1.12;09:50;11:20
+Freitag;Diskrete Mathematik;Übung;A10.3.01;09:50;11:20
+Freitag;Online Payment Solutions;Seminaristischer Unterricht;A20.2.09;09:50;11:20
+Freitag;Entwicklung Sicherer Systeme;Seminaristischer Unterricht;A21.0.01;09:50;11:20
+Freitag;Konzepte systemnaher Programmierung;Praktikum;A10.2.05;09:50;11:20
+Freitag;English for STEM 3;Seminaristischer Unterricht;C13.1.12;11:30;13:00
+Freitag;Konzepte systemnaher Programmierung;Praktikum;A10.2.05;11:30;13:00
+Freitag;Rechnernetze und Einführung in verteilte Systeme;Übung;A12.1.16;11:30;13:00
+Freitag;Algorithmen und Datenstrukturen;Vorlesung;A20.1.36;11:30;13:00
+Freitag;Hauptseminar;Seminaristischer Unterricht;A20.1.08;11:30;13:00
+Freitag;Datenbanksysteme;Übung;A20.2.10;11:30;13:00
+Freitag;English for STEM 1;Seminaristischer Unterricht;C13.1.12;11:30;13:00
+Freitag;English for STEM 2;Seminaristischer Unterricht;C13.1.12;11:30;13:00
+Freitag;Algorithmen und Datenstrukturen;Übung;A20.1.08;14:00;15:30
+Freitag;Secure Software Engineering;Seminaristischer Unterricht;A20.2.09;14:00;15:30
+Freitag;Evaluation interaktiver Systeme;Seminaristischer Unterricht;A10.8.08;14:00;15:30
+Freitag;Lineare Algebra;Übung;A12.1.16;14:00;15:30
+Freitag;Konzepte systemnaher Programmierung;Praktikum;A10.2.05;14:00;15:30
+Freitag;Augmented Reality;Seminaristischer Unterricht;A20.0.08;15:45;17:15
+Freitag;Secure Software Engineering;Seminaristischer Unterricht;A20.2.09;15:45;17:15
+Freitag;Evaluation interaktiver Systeme;Seminaristischer Unterricht;A10.8.08;15:45;17:15
+Freitag;Augmented Reality;Seminaristischer Unterricht;A20.0.08;17:30;19:00

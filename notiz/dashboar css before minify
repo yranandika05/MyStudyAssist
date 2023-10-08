@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+$primary-color: #30336b;
+$secondary-color: #dff9fb;
+$subtitle: black;
+$blue: #4834d4;
+$green: #0DE836;
+
+
+.dashboard{
+  width: 100%;
+  height: 100%;
+  padding: 50px 100px 50px 100px;
+  background-color: inherit;
+  //overflow-y: scroll;
+  & .row{
+    margin-bottom: 20px;
+  }
+}
+
+.activity{
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-right: 50px;
+
+
+  & .card-title{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+
+    & i{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      aspect-ratio: 1;
+      margin-right: 25px;
+      background-color: $primary-color;
+      border-radius: 15px;
+      color: white !important;
+    }
+    & .title{
+      padding-top: 15px;
+      & p{
+        color: black;
+      }
+    }
+  }
+  & .card-footer{
+    background-color: transparent;
+    border-style: hidden;
+    padding-bottom: 20px;
+  }
+}
+
+.courses{
+  background-color: $secondary-color !important;
+
+  & h1{
+    text-align: center;
+    color: black;
+  }
+}
+
+.credit-points{
+  height: 450px;
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  color: black;
+  background-color: $secondary-color;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-right: 50px;
+
+  & .card-title{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+
+  }
+  & .credit{
+    height: 250px;
+    align-items: center;
+    display: block;
+    & h1{
+      color: $green;
+      font-weight: bold;
+    }
+
+    & .crp-bar{
+      width: 160px;
+      height: 160px;
+      position: relative;
+
+      & circle{
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 20px;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: anim 2s linear forwards;
+      }
+
+      & svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      & .outer{
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        padding: 20px;
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                    -6px -6px 10px -1px rgba(255,255,255,0.7);
+
+        & .inner{
+          height: 120px;
+          width: 120px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                      -0.5px -0.5px 0px rgba(255,255,255,1),
+                      0.5px 0.5px 0px rgba(0,0,0,0.15),
+                      0px 12px 10px -10px rgba(0,0,0,0.05);
+
+          & #number{
+            color: $blue;
+          }
+
+        }
+      }
+    }
+   }
+}
+@keyframes anim{
+  100%{
+    stroke-dashoffset: var(--progressvalue);
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1360px) {
+  .dashboard{
+    padding: 50px;
+  }
+  .activity{
+    width: fit-content;
+    display: inline-block;
+  
+  
+    & .card-title{
+      & .title{
+        & p{
+          color: $subtitle;
+        }
+      }
+    }
+
+    & .card-footer{
+      & i{
+        font-size: 1em;
+        margin-top: -15px;
+      }
+    }
+  }
+  
+  
+  .credit-points{
+    width: 400px;
+  }
+
+  
+}
+
+@media screen and (min-width: 360px) and (max-width: 999px) {
+  .dashboard{
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  
+  .activity{
+    margin: 0px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0px;
+    border-style: none;
+  
+  
+    & .card-title{
+  
+      & i{
+        margin-right: 0px;
+        background-color: transparent;
+        color: black !important;
+      }
+      & h5{
+        margin: 0px;
+      } 
+    }
+
+    & h1{
+      margin: 0px;
+    }
+
+    & .card-footer{
+      & .fa-xl{
+        font-size: 1em !important;
+        margin-top: -15px;
+      }
+    }
+  }
+
+  .grade{
+    background-color: white !important;
+  }
+
+  .credit-points{
+    margin: 0px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0px;
+    border-style: none;
+  }
+}

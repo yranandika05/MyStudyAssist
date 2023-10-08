@@ -1,0 +1,108 @@
+{
+  "_SECTION1_": "PANEL",
+
+  "welcome": "Willkommen zurück",
+  "message": "Hier sind die Statistiken von heute",
+  "dashboard": "Dashboard",
+  "panelScore": "Punktestand",
+  "calendar": "Kalender",
+  "simulation": "Simulation",
+  "courses": "Modulen",
+  "settings": "Einstellungen",
+  "language": "deutsch",
+
+
+  "_SECTION2_": "DASHBOARD",
+
+  "todayActivity": "Heutige Aktivität",
+  "noActivity" : "Keine Aktivität",
+  "activities": "Aktivitäten",
+  "availableCourses": "Verfügbare Kurse",
+  "averageGrade": "Durchschnittsnote",
+  "studyPerformance": "Studienleistung",
+  "creditPoints": "Kreditpunkte",
+  "notification": "Benachrichtigung",
+  "missingModules": "Nicht belegte Module aus den ersten 3 Semestern",
+  "projectPhase": "Sie können die Projektphase beginnen",
+  "oneActivity": "Aktivität läuft/laufen wird",
+  "numberOfActivities": "Aktivitäten sind/werden durchgeführt",
+
+
+  "_SECTION3_": "SCORE TABLE",
+
+  "addNewScore": "Neuen Note",
+  "addNewPredictionScore": "Neuer Prognosescore" ,
+  "edit": "Bearbeiten",
+  "submitScore": "Note Eintragen",
+  "delete": "Löschen",
+  "code": "Code",
+  "title": "Titel",
+  "score": "Note",
+  "percentage": "Prozentwert",
+  "estimate": "Schätzwert",
+  "creditPoint": "Kreditpunkte",
+  "averageValue": "Durchschnittswert",
+  "averageEstimateScore": "Geschätzte Durchschnittsnote",
+  "estimateCreditPoint": "Geschätzte Kreditpunkte",
+  "action" : "Aktion",
+  "passed": "bestanden",
+  "unpassed": "nicht bestanden",
+
+
+  "_SECTION4_": "CALENDAR",
+
+
+
+
+  "_SECTION5_": "COURSES",
+  "searchInput": "Suchen",
+  "searchSemester": "Alle Semester",
+
+
+
+
+  "_SECTION6_": "SETTINGS",
+
+  "personalInfo": "Persönliche Informationen",
+  "firstName": "Vorname",
+  "lastName": "Nachname",
+  "idNumber": "Matrikelnummer",
+  "university": "Universität",
+  "department": "Fachbereich",
+  "faculty": "Studiengang",
+  "degree": "Abschluss",
+  "save": "Speichern",
+  "resetPassword": "Passwort ändern",
+  "enterNewPassword": "Neues Passwort eingeben",
+  "repeatNewPassword": "Neues Passwort wiederholen",
+  "logOut": "Ausloggen",
+
+
+  "_SECTION7_": "MODAL",
+
+  "newEntry": "Neuer Eintrag",
+  "newData": "Geben Sie neue Daten ein",
+  "modalTitle": "Titel",
+  "modalStartTime": "Anfangszeitpunkt",
+  "modalEndTime": "Endzeit",
+  "modalStartDate": "Startdatum",
+  "modalEndDate": "Enddatum",
+  "modalClose": "Schließen",
+  "modalSave": "Speichern",
+  "modalCode" : "Kode",
+  "modalEstimate": "Schätzwert",
+  "modalCreditPoint": "Kreditpunkte",
+  "modalScore": "Note",
+  "modalPercentage": "Prozentwert",
+  "langSelection": "Wählen Sie eine Sprache",
+  "modalSubmitScore": "Noten ",
+  "requirementWarning": "Sie haben die erforderlichen Module nicht belegt",
+  "invalidPercentage": "Geben Sie bitte die Zahlen 0 - 100 ein.",
+  "emptyPercentage": "Geben Sie bitte den Prozentsatz mit einer positiven Zahl an.",
+  "emptyInput": "Geben Sie bitte den Code, den Titel und den Prozentsatz an.",
+  "scoreExist": "Modul ist bereits in der Score-Tabelle vorhanden",
+  "courseCode" : "Code des Kurses",
+  "courseName" : "Name des Kurses",
+  "scoreFillNote" : "Bitte geben Sie Code, Titel und Prozentsatz ein.",
+  "noPlan": "Kein Zeitplan"
+}

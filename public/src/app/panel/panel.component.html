@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="sidebar">
+      <h3 class="myLogo">My Study Assist</h3>
+    <a [class.active]="activePanel === 'dashboard'" (click)="setActivePanel()" routerLink="/panel/dashboard"><i class="fa-solid fa-house-user">&nbsp;</i>{{'dashboard' | translate}}</a>
+    <a [class.active]="activePanel === 'score'" (click)="setActivePanel()" routerLink="/panel/score"><i class="fa-solid fa-table-list"></i>{{'panelScore' | translate}}</a>
+    <a [class.active]="activePanel === 'calendar'" (click)="setActivePanel()" routerLink="/panel/calendar"><i class="fa-solid fa-calendar-days"></i>{{'calendar' | translate}}</a>
+    <a [class.active]="activePanel === 'courses'" (click)="setActivePanel()" routerLink="/panel/courses"> <i class="fa-solid fa-grip"></i>{{'courses' | translate}}</a>
+    <div class="line"></div>
+    <a [class.active]="activePanel === 'settings'" (click)="setActivePanel()" routerLink="/panel/settings"><i class="fa-solid fa-gears"></i>{{'settings' | translate}}</a>
+  </div>
+  <div class="right-side" style="padding: 0; margin: 0">
+    <div class="header">
+      <div class="welcome-text">
+        <h3>{{'welcome' | translate}}</h3>
+        <h6>{{'message' | translate}}</h6>
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn-primary" (click)="setLanguage()"><i class="fa-solid fa-globe"></i><p style="display: inline;"> {{language}}</p></button>
+        <!--a routerLink="/panel/notification"><i class="fa-regular fa-bell"></i></a-->
+        <a routerLink="/panel/settings" (click)="setActivePanel()"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+    <div class="pages">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

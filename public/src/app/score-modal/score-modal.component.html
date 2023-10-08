@@ -1,0 +1,50 @@
+<div class="modal-header"><h4 class="modal-title">{{"newData" | translate}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()">
+  </button>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+    <small class="text-danger" *ngIf="isScoreExist">
+      {{"scoreExist" | translate}}
+    </small>
+    <br>
+    <label for="codeInput">{{"modalCode" | translate}}</label>
+    <input type="text" class="form-control" id="codeInput" [(ngModel)]="code" (input)="updateTitle(); updateCreditPoint(); checkValidity()"  placeholder="{{'courseCode' | translate}}">
+
+    <label for="titleInput">{{"modalTitle" | translate}}</label>
+    <div class="autocomplete-container">
+      <input type="text" class="form-control" id="titleInput" [(ngModel)]="title" placeholder="{{'courseName' | translate}}" (input)="onInputChange(); checkValidity()">
+      <div *ngIf="showDropdown" class="autocomplete-dropdown">
+        <div *ngFor="let option of autocompleteOptions"
+             class="autocomplete-option"
+             (click)="selectOption(option)">
+          {{ option }}
+        </div>
+      </div>
+    </div>
+    <small class="requirements-error" style="color: red" *ngIf="hasMissingRequirements()">
+      {{"requirementWarning" | translate}}: <br> {{ getMissingRequirements() }}
+    </small>
+    <br>
+
+    <label for="percentageInput">{{"modalPercentage" | translate}}</label>
+    <input type="text" class="form-control" id="percentageInput" [(ngModel)]="percentage" placeholder="{{'percentage' | translate}}" (input)="checkValidity()">
+    <small class="text-danger" *ngIf="isPercentageNegative()">
+      {{"invalidPercentage" | translate}}
+    </small>
+    <br>
+
+    <label for="crpInput">{{"modalCreditPoint" | translate}}</label>
+    <input disabled type="text" class="form-control" id="crpInput" [(ngModel)]="creditPoint" placeholder="Credit Point of the course">
+    <small class="text-danger" *ngIf="(code.trim() === '' || title.trim() === '' || percentage === null || percentage.toString().trim() === '' || isSaveDisabled)">
+      {{"scoreFillNote" | translate}}
+    </small>
+
+
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss()">{{"modalClose" | translate}}</button>
+  <button type="button" class="btn btn-success" [disabled]="isSaveDisabled || isPercentageNegative()" (click)="save()">{{"modalSave" | translate}}</button>
+</div>
+

@@ -1,0 +1,95 @@
+@startuml
+(*) -down-> [Connect to vpn.thm.de] "Access >>http://10.48.18.222:8000<<"
+
+if "Have an account?" then
+--> [true] Login using MSA account
+else
+--> [false] Create a MSA account
+--> Login using MSA account
+
+endif
+
+-down-> "O"
+
+partition Dashboard {
+    -down-> "Enter dashboard"
+    
+    -down-> === DashboardActivity ===
+
+    partition scoreActivity #FFEAAE{
+        === DashboardActivity === --> "Select menu >>Score<<"
+        -down-> === score ===
+        --> "Click >>Add score<<"
+
+        --> === ScoreActivity ===
+        === score === --> "Click >>Add simulation<<"
+        --> === ScoreActivity ===
+
+        partition addScore {
+            -down-> "A"
+            --> "Input modul name"
+            --> "Input score"
+            -down-> "Submit score"
+
+            if "Add other score?" then  
+            -down-> [true] "A"
+            else
+                
+        }
+        -->[false] === ScoreEnd ===
+        endif
+        
+
+        partition editScore {
+            === ScoreActivity === --> "Click on edit icon"
+            --> "Edit input"
+            --> "Submit"
+            --> === ScoreEnd ===
+        }
+
+        partition deleteScore {
+            === ScoreActivity === --> "Click on delete icon"
+            --> "Confirm delete"
+        }
+
+    
+
+    -down-> === ScoreEnd ===
+    
+}
+    --> "X"
+    partition Courses #F0D4D1{
+        === DashboardActivity === --> "Select menu >>Courses<<"
+        --> "Search courses"
+        --> === CoursesActivity ===
+        partition addToCalendar {
+            === CoursesActivity === --> "Click >>Add to calendar<<"
+        }
+        
+        --> === CoursesEnd ===
+    }
+    --> "X"
+
+    partition calendarActivity #DBEC9E {
+        === DashboardActivity === --> "Select menu >>Calendar<<"
+        --> "C"
+        partition addNewActivity {
+            --> "Click on the date"
+            --> "Add title and time"
+            --> "Done"
+        }
+    }
+    
+    --> "X"
+
+    if "Do other activity?" then
+    -[#00ff00]up-> [true] "O"
+    else
+    -[#ff0000]-> [false]=== DashboardEnd ===
+    endif
+
+}
+--> "Go to >>Settings<<"
+--> "Logout"
+--> (*)
+@enduml

@@ -1,0 +1,80 @@
+<div class="container-fluid">
+  <div class="profile w-100">
+    <div class="title w-100 d-flex align-items-center">
+      <i class="fa-regular fa-id-card fa-2xl"></i>
+      <h3 class="h3-profile">{{'personalInfo' | translate}}</h3>
+      <div class="line"></div>
+    </div>
+    <div class="container profile-setting">
+      <div class="row">
+        <div class="mb-3 col-lg-6" >
+          <Label for="firstName" class="form-label">{{'firstName' | translate}}</Label>
+          <input type="text" class="form-control " id="firstName" placeholder={{firstName}} #fName>
+        </div>
+        <div class="mb-3 col-lg-6">
+          <Label for="lastName" class="form-label">{{'lastName' | translate}}</Label>
+          <input type="text" class="form-control " id="lastName" placeholder={{lastName}} #name>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="idNumber" class="form-label">{{'idNumber' | translate}}</label>
+        <input type="text" class="form-control" id="IdNumber" disabled placeholder={{idNumber}} #matrikelnr>
+      </div>
+
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input  type="text" class="form-control" id="username" disabled placeholder={{username}} #uname>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" class="form-control" id="email" disabled placeholder={{email}} #uEmail>
+      </div>
+
+      <div class="mb-3">
+        <label for="university" class="form-label">{{'University' | translate}}</label>
+        <input type="text" class="form-control" id="university" disabled placeholder={{university}} #uni>
+      </div>
+
+      <div class="mb-3">
+        <label for="faculty" class="form-label">{{'faculty' | translate}}</label>
+        <select class="form-select" id="faculty" aria-label="Default select example" #uFaculty>
+
+          <option *ngFor="let faculty of facultyList" [value]="faculty.facultyid"  [selected]="faculty.facultyid === facultyId">{{ faculty.name }}</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="degree" class="form-label">{{'degree' | translate}}</label>
+        <select class="form-select" id="degree" aria-label="Default select example" #uDegree>
+
+          <option *ngFor="let degree of degreeProgramList" [value]="degree.degreeprogramid" [selected]="degree.degreeprogramid === degreeProgramId">{{ degree.name }}</option>
+        </select>
+      </div>
+      <button class="btn btn-primary mt-5" style="font-weight: bold; background-color: #256AA8" type="submit" (click)="save(fName.value, name.value,uni.value, uFaculty.value, uDegree.value)"> {{'save' | translate}} </button>
+    </div>
+  </div>
+  <div class="reset-password mt-5 w-100">
+    <div class="title w-100 d-flex align-items-center">
+      <i class="fa-solid fa-lock fa-2xl"></i>
+      <h3 class="h3-reset-password">{{'resetPassword' | translate}}</h3>
+      <div class="line"></div>
+    </div>
+    <div class="container reset-password">
+      <div class="mb-3">
+        <label for="enterNewPassword" class="form-label">{{'enterNewPassword' | translate}}</label>
+        <input type="password" class="form-control" id="enterNewPassword" placeholder="New Password"  #pass>
+      </div>
+      <div class="mb-3">
+        <label for="repeatNewPassword" class="form-label">{{'repeatNewPassword' | translate}}</label>
+        <input type="password" class="form-control " id="repeatNewPassword" placeholder="New Password" #repeatedPass>
+      </div>
+      <button class="btn btn-primary mt-5"  style="font-weight: bold; background-color: #256AA8" type="submit" (click)="resetPassword(pass.value, repeatedPass.value)">{{'resetPassword' | translate}}</button>
+    </div>
+  </div>
+  <div class="logout d-flex justify-content-end">
+    <button class="btn btn-danger mt-5"  style="font-weight: bold" type="submit" (click)="logOut()">{{'logOut' | translate}}</button>
+  </div>
+
+</div>

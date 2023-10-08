@@ -1,0 +1,106 @@
+<div class="container-fluid">
+
+  <div class="mini-legend">
+    <div class="legend-item">
+      <div class="legend-color red"></div>
+      <div class="legend-text">{{'unpassed' | translate}}</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color black"></div>
+      <div class="legend-text">{{'passed' | translate}}</div>
+    </div>
+  </div>
+
+  <!------ score Table --------------->
+
+  <div class="scoreTable">
+    <button class="btn btn-primary mb-4" (click)="addNewScore()">{{'addNewScore' | translate}}</button>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col" class="tab-title">{{'code' | translate}}</th>
+        <th scope="col" class="tab-title">{{'title' | translate}}</th>
+        <th scope="col" class="tab-title">{{'score' | translate}}</th>
+        <th scope="col" class="tab-title">{{'percentage' | translate}}</th>
+        <th scope="col" class="tab-title">{{'creditPoint' | translate}}</th>
+        <th scope="col" class="tab-title">{{'action' | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <ng-container *ngFor="let item of scoreList">
+        <tr *ngIf="!item.prediction">
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.code}}</td>
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.title}}</td>
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.grade}}</td>
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.percentage}}%</td>
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.passed ? item.creditPoint : 0}}</td>
+          <td class="action">
+            <button type="button" class="btn btn-warning" (click)="updateScore(item.gradeId, item.code, false)">
+              <i class="fa-regular fa-pen-to-square"></i>
+            </button>
+            <button type="button" class="btn btn-danger" (click)="delScore(item.gradeId, item.code)">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </td>
+        </tr>
+      </ng-container>
+      </tbody>
+      <tfoot class="table-group-divider" style="font-weight: bold">
+      <td colspan="2" style="text-align: center" class="summary">{{'averageValue' | translate}}</td>
+      <td>{{getAverageScore()}}</td>
+      <td style="padding: 10px" class="summary">{{getAveragePercentage()}}%</td>
+      <td style="padding: 10px" class="summary">{{getTotalCreditPoint()}}</td>
+      <td></td>
+      </tfoot>
+    </table>
+  </div>
+
+  <!------ Prediction Table --------------->
+
+  <div class="estimateScoreTable">
+    <button class="btn btn-primary mb-4" (click)="addNewEstimateScore()">{{'addNewPredictionScore' | translate}}</button>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col" class="tab-title">{{'code' | translate}}</th>
+        <th scope="col" class="tab-title">{{'title' | translate}}</th>
+        <th scope="col" class="tab-title">{{'score' | translate}}</th>
+        <th scope="col" class="tab-title">{{'percentage' | translate}}</th>
+        <th scope="col" class="tab-title">{{'creditPoint' | translate}}</th>
+        <th scope="col" class="tab-title">{{'action' | translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <ng-container *ngFor="let item of scoreList">
+        <tr *ngIf="item.prediction">
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.code}}</td>
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.title}}</td>
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.grade}}</td>
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.percentage}}%</td>
+          <td class="tab-item" [ngClass]="{'red-text': !item.passed}">{{item.creditPoint}}</td>
+          <td class="action">
+            <button type="button" class="btn btn-warning" (click)="updateScore(item.gradeId, item.code, true)">
+              <i class="fa-regular fa-pen-to-square"></i>
+            </button>
+            <button type="button" class="btn btn-success" (click)="submitScore(item.gradeId, item.code)">
+              <i class="fa-regular fa-square-check"></i>
+            </button>
+            <button type="button" class="btn btn-danger" (click)="delScore(item.gradeId, item.code)">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </td>
+        </tr>
+      </ng-container>
+      </tbody>
+      <tfoot class="table-group-divider" style="font-weight: bold">
+      <td colspan="2" style="text-align: center" class="summary">{{'averageValue' | translate}}</td>
+      <td>{{getAverageEstimateScore()}}</td>
+      <td style="padding: 10px" class="summary">{{getAverageEstimatePercentage()}}%</td>
+      <td style="padding: 10px" class="summary">{{getTotalEstimateCreditPoint()}}</td>
+      <td></td>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+

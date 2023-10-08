@@ -1,0 +1,32 @@
+<div class="modal-header"><h4 class="modal-title">{{"modalSubmitScore" | translate}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()">
+  </button>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+    <label for="codeInput">{{"modalCode" | translate}}</label>
+    <input disabled type="text" class="form-control" id="codeInput" [(ngModel)]="code" placeholder="Code of the course">
+
+    <label for="titleInput">{{"modalTitle" | translate}}</label>
+    <input disabled type="text" class="form-control" id="titleInput" [(ngModel)]="title" placeholder="Name of the course">
+
+    <label for="percentageInput">{{"modalPercentage" | translate}}</label>
+    <input type="text" class="form-control" id="percentageInput" [(ngModel)]="percentage" placeholder="Percentage" (input)="checkValidity()">
+    <small class="text-danger" *ngIf="isPercentageNegative()">
+      {{"invalidPercentage" | translate}}
+    </small>
+    <br>
+
+    <label for="crpInput">{{"modalCreditPoint" | translate}}</label>
+    <input disabled type="text" class="form-control" id="crpInput" [(ngModel)]="creditPoint" placeholder="Credit Point of the course">
+    <small class="text-danger" *ngIf="(percentage === null || percentage.toString().trim() === '' || isSaveDisabled)">
+      {{"emptyPercentage" | translate}}
+    </small>
+    <br>
+
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss()">{{"modalClose" | translate}}</button>
+  <button type="button" class="btn btn-success" [disabled]="isSaveDisabled || isPercentageNegative()" (click)="save()">{{"modalSave" | translate}}</button>
+</div>

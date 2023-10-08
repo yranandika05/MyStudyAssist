@@ -1,0 +1,58 @@
+$primary-color: #30336b;
+$secondary-color: #dff9fb;
+$subtitle: black;
+$grey: #b5b3b3;
+$blue: #4834d4;
+$dark-blue: #202f8e;
+$green: #0DE836;
+$yellow: #f2e96d;
+$softblue: cornflowerblue;
+
+.container-fluid{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  overflow-y: scroll;
+}
+
+
+
+::ng-deep .fc-col-header-cell-cushion{
+  text-decoration: none;
+  color: white;
+}
+
+::ng-deep .fc-col-header{
+  background-color: $primary-color;
+}
+
+::ng-deep .fc-daygrid-day-number{
+  text-decoration: none;
+  color: $primary-color;
+}
+
+::ng-deep .fc-daygrid-day{
+  height: 200px !important;
+  background-color: white;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 650px) {
+  .container-fluid{
+    padding: 0px;
+    padding-top: 50px;
+  }
+
+  ::ng-deep .fc-toolbar-title{
+    font-size: 0.75em !important;
+  }
+
+  ::ng-deep .fc-button{
+    font-size: 0.65em !important;
+  }
+
+  ::ng-deep .fc-header-toolbar{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

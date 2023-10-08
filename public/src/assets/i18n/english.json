@@ -1,0 +1,108 @@
+{
+  "_SECTION1_": "PANEL",
+
+  "welcome": "Welcome Back",
+  "message": "Here are today's stats",
+  "dashboard": "Dashboard",
+  "panelScore": "Score",
+  "calendar": "Calendar",
+  "simulation": "Simulation",
+  "courses": "Courses",
+  "settings": "Settings",
+  "language": "english",
+
+
+  "_SECTION2_": "DASHBOARD",
+
+  "todayActivity": "Today Activity",
+  "noActivity" : "No running activity",
+  "activities": "activities",
+  "availableCourses": "Available Courses",
+  "averageGrade": "Average Grade",
+  "studyPerformance": "Study Performance",
+  "creditPoints": "Credit Points",
+  "notification": "Notification",
+  "missingModules": "Modules from the first 3 Semesters that have not been taken",
+  "projectPhase": "You can start the project phase",
+  "oneActivity": "activity are/will be running",
+  "numberOfActivities": "activities are/will be running",
+
+
+  "_SECTION3_": "SCORE TABLE",
+
+  "addNewScore": "New Score",
+  "addNewPredictionScore": "New Prediction Score" ,
+  "edit": "Edit",
+  "submitScore": "Submit Score",
+  "delete": "Delete",
+  "code": "Code",
+  "title": "Title",
+  "score": "Score",
+  "percentage": "Percentage",
+  "estimate": "Estimated Score",
+  "creditPoint": "Credit Point",
+  "averageValue": "Average Value",
+  "averageEstimateScore": "Average score you will have",
+  "estimateCreditPoint": "Credit point you will have",
+  "action" : "Action",
+  "passed": "passed",
+  "unpassed": "not passed",
+
+
+  "_SECTION4_": "CALENDAR",
+
+
+
+  "_SECTION5_": "COURSES",
+  "searchInput": "Search",
+  "searchSemester": "All semester",
+
+
+
+  "_SECTION6_": "SETTINGS",
+
+  "personalInfo": "Personal Information",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "idNumber": "ID Number",
+  "university": "University",
+  "department": "Departement",
+  "faculty": "Faculty",
+  "degree": "Degree",
+  "save": "Save",
+  "resetPassword": "Reset Password",
+  "enterNewPassword": "Enter New Password",
+  "repeatNewPassword": "Repeat New Password",
+  "logOut": "Log Out",
+
+
+  "_SECTION7_": "MODAL",
+
+  "newEntry": "New Entry",
+  "newData": "Enter New Data",
+  "modalTitle": "Title",
+  "modalStartTime": "Start Time",
+  "modalEndTime": "Finish Time",
+  "modalStartDate": "Start Date",
+  "modalEndDate": "Finish Date",
+  "modalClose": "Close",
+  "modalSave": "Save",
+  "modalCode": "Code",
+  "modalEstimate": "Estimated Score",
+  "modalCreditPoint": "Credit Point",
+  "modalScore": "Score",
+  "modalPercentage": "Percentage",
+  "langSelection": "Select a Language",
+  "modalSubmitScore": "Submit Score",
+  "requirementWarning": "You have not taken the required modules",
+  "invalidPercentage": "Please enter numbers 0 - 100.",
+  "emptyPercentage": "Please fill percentage with a positive number.",
+  "emptyInput": "Please fill the code, title and percentage.",
+  "scoreExist": "Module is already exist in score table",
+  "courseCode" : "Code of the course",
+  "courseName" : "Name of the course",
+  "scoreFillNote" : "Please fill the code, title and percentage.",
+  "noPlan": "Plan not available"
+
+
+}

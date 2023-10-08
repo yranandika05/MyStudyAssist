@@ -1,0 +1,9 @@
+In diesem Verzeichnis befindet sich der Scraper für die THM-Webseite, die CSV-Dateien und die SQL-Befehle.
+mit dem Scrapper wird jeder Fachbereich und deren Lehrer sowie die jeweiligen Module werden erfasst.
+
+Es werden 2 CSV-Dateien generiert. Eine für die Teacher und eine für die Module.
+
+Der Code funktioniert auf einem Windowsbetriebssystem. Um den Code auszufüren, müssen Sie die .py in einer IDE Ihrer Wahl ausführen. Die CSV-Dateien werden in dem gleichen Verzeichnis wie die .py erstellt.
+
+
+Auf Git können Sie die generierten CSV-Dateien sehen. teacher.csv enthält alle Teacher und modulAll.csv enthält alle Module.

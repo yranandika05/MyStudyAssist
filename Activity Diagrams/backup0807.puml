@@ -1,0 +1,87 @@
+@startuml
+(*) -right-> [Connect to vpn.thm.de] "Access >>http://10.48.18.222:4040<<"
+
+if "Have an account?" then
+-right-> [true] Login using MSA account
+else
+-right-> [false] Create a MSA account
+--> Login using MSA account
+-right-> "O"
+endif
+
+-down-> === s1 === 
+
+partition Dashboard #B19CD8{
+    --> "Enter dashboard"
+    -right-> "View activity"
+}
+
+-down-> === s2 ===
+--> "Logout"
+--> (*)
+
+partition Score #FFEAAE{
+    === s1 === -left-> "Select menu >>Score<<"
+    -left-> === score ===
+    partition inputModal{
+        --> "Select >>Add Score<<"
+        --> "A"
+        --> "Input modul name"
+        -right-> "Input Semester"
+        --> "Input points"
+        -left-> "Input status"
+        --> "Input score"
+        -right-> "Submit score"
+    }
+    if "Add other score?" then  
+    -right-> [true] "A"
+    else 
+        --> "End score activity"
+        if "False" then 
+        -[#00ff00]right-> [Do another activity?] "O"
+        else
+        -[#ff0000]left-> [End activity] === s2 ===
+        endif
+    endif
+
+    partition exportScore {
+        === score === --> "Select >>Export statistic<<"
+        --> "End score activity"
+    }
+
+}
+
+partition Simulate #C2E6EF{
+    === s1 === --> "Select menu >>Simulation<<"
+    --> [End activity]=== s2 ===
+}
+
+partition Courses #F0D4D1{
+    === s1 === --> "Course"
+    -right-> "Search for modul"
+    --> "M"
+    -right-> "Select modul"
+    if "Search other modul?" then
+    -left-> [true] "M"
+    else
+        if "Do another activity?" then
+        -[#00ff00]right-> "O"
+        else
+        -[#ff0000]left-> [End activity] === s2===
+        endif
+    endif
+}
+
+partition Calendar #DBEC9E {
+    === s1 === --> "Select menu >>Calendar<<"
+    partition importCalendar {
+        --> "Select >>Import *.ics calendar<<"
+    }
+    if "Do another activity?" then 
+    -[#00ff00]right-> [true] "O"
+    else
+    -[#ff0000]left-> [End activity] === s2 ===
+    endif
+}
+
+@enduml

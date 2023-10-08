@@ -1,0 +1,115 @@
+$primary-color: #30336b;
+$secondary-color: #dff9fb;
+$subtitle: black;
+$grey: #b5b3b3;
+$blue: #4834d4;
+$dark-blue: #202f8e;
+$green: #0DE836;
+$yellow: #f2e96d;
+$softblue: cornflowerblue;
+
+.container-fluid{
+  width: 100%;
+  height: 100%;
+  padding: 50px 100px 50px 100px;
+  background-color: inherit;
+  overflow-y: scroll;
+}
+
+.mini-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+}
+
+/* Adjust font styles as needed */
+.legend-text {
+  font-size: 14px;
+}
+
+tfoot{
+  background-color: $secondary-color;
+}
+
+.red-text{
+  color:red;
+}
+
+.action{
+  & button.btn{
+    width: fit-content;
+    font-size: 0.75em;
+    margin: 5px;
+  }
+}
+
+.btn-primary{
+  background-color: $blue;
+}
+
+.estimateScoreTable{
+  padding-top: 100px;
+}
+
+@media screen and (min-width: 651px) and (max-width: 1360px) {
+  .container-fluid{
+    padding: 7px;
+    padding-top: 20px;
+  }
+
+  .estimateScoreTable{
+    padding-top: 100px;
+  }
+
+}
+
+@media screen and (min-width: 1361px) {
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 650px) {
+  .container-fluid{
+    padding: 10px;
+  }
+
+  .btn{
+    font-size: 0.75em;
+  }
+
+  .tab-title{
+    font-size: 0.75em;
+  }
+
+  .tab-item{
+    font-size: 0.75em;
+  }
+
+  .summary{
+    font-size: 0.75em;
+  }
+
+  .estimateScoreTable{
+    padding-top: 100px;
+  }
+}

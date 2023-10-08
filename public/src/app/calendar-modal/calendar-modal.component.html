@@ -1,0 +1,32 @@
+<div class="modal-header"><h4 class="modal-title">{{"newEntry" | translate}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()">
+  </button>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+    <input class="form-check-input" type="checkbox" value="" id="moduleCheckBox" [(ngModel)]="isModule" >
+    <label class="form-check-label" for="moduleCheckBox">
+      Add Course to calendar?
+    </label><br><br>
+
+    <label *ngIf="isModule" class="title-label" for="moduleCodeInput">{{"code" | translate}}</label>
+    <input *ngIf="isModule" type="text" class="form-control" id="moduleCodeInput" (input)="updateTitle()" [(ngModel)]="code" placeholder="Module Code">
+
+    <label class="title-label" for="itemInputTitle">{{"modalTitle" | translate}}</label>
+    <input type="text" class="form-control" id="itemInputTitle" [(ngModel)]="title"  placeholder="Title">
+
+    <label for="itemInputStart">{{"modalStartTime" | translate}}</label>
+    <input type="text" class="form-control" id="itemInputStart" [(ngModel)]="startTime"  placeholder="hh:mm">
+
+    <label for="itemInputEnd">{{"modalEndTime" | translate}}</label>
+    <input type="text" class="form-control" id="itemInputEnd" [(ngModel)]="endTime" placeholder="hh:mm">
+
+
+    <label *ngIf="isModule" class="title-label" for="endDate">{{"modalEndDate" | translate}}</label>
+    <input *ngIf="isModule" type="text" class="form-control" id="endDate" (input)="updateTitle()" [(ngModel)]="endDate" placeholder="YYYY-MM-DD">
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss()">{{"modalClose" | translate}}</button>
+  <button type="button" class="btn btn-success" (click)="save()">{{"modalSave" | translate}}</button>
+</div>

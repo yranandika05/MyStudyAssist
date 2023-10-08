@@ -1,0 +1,16 @@
+<div class="modal-header"><h4 class="modal-title">{{"language" | translate}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()">
+  </button>
+</div>
+<div class="modal-body">
+  <label for="language-selection" >{{"langSelection" | translate}}</label>
+  <select class="form-select" id="language-selection" aria-label="Default select example" [(ngModel)]="language">
+    <option value="english">English</option>
+    <option value="deutsch">Deutsch</option>
+    <option value="bahasa">Bahasa</option>
+  </select>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss()">{{"modalClose" | translate}}</button>
+  <button type="button" class="btn btn-success" (click)="save()">{{"modalSave" | translate}}</button>
+</div>

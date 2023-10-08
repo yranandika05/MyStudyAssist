@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="d-flex justify-content-center pt-2">
+    <input type="text" class="form-control border border-primary search" style="width: 350px" [(ngModel)]="searchTerm" (keyup)="filterCourse()"  [placeholder]="'searchInput' | translate" >
+    <select class="form-select filter" style="width: 200px; margin-left: 10px"   [(ngModel)]="selectedSemester" (change)="filterCoursesBySemester(selectedSemester)">
+      <option selected value="">{{"searchSemester" | translate}}</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+  </div>
+  <div class="row" style="padding: 10px">
+    <div *ngFor="let course of filteredCourses" class="col-md-4">
+      <div class="card mb-3" style="height: 570px">
+        <div class="card-header">
+          <h5 class="card-title" style="width: 100%">
+            
+            <a href="{{ course.address }}" class="course-link">{{ course.title }}</a>
+            <button class="btn" [class.btn-primary]="!course.isModuleAddedToCalendar" [class.btn-danger]="course.isModuleAddedToCalendar" style="position: absolute; right: 10px" (click)="course.isModuleAddedToCalendar ? deleteFromCalendar(course) : addToCalendar(course.moduleid)">
+              <span *ngIf="!course.isModuleAddedToCalendar" class="calendar-icon">
+                <i class="fas fa-calendar-plus"></i>
+              </span>
+              <span *ngIf="course.isModuleAddedToCalendar" class="calendar-icon">
+                <i class="fas fa-calendar-times"></i>
+              </span>
+            </button>
+          </h5>
+        </div>
+        <div class="card-body">
+          <p><strong>Code:</strong> {{ course.code }}</p>
+          <p><strong>Description:</strong> {{ course.description }}</p>
+          <p><strong>Credit Points:</strong> {{ course.creditPoint }}</p>
+          <p><strong>Requirement:</strong> {{ course.requirement }}</p>
+          <p><strong>Semester:</strong> {{ course.semester }}</p>
+          <p><strong>Teacher:</strong> {{ course.teacherName }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

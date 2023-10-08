@@ -1,0 +1,39 @@
+@startuml
+(*) -down-> [Connect to vpn.thm.de] "Access >>http://10.48.18.222:8000<<"
+
+if "Have an account?" then
+--> [true] Login using MSA account
+else
+--> [false] Create a MSA account
+--> Login using MSA account
+
+endif
+
+-down-> "O"
+
+partition Dashboard {
+    -down-> "Enter dashboard"
+    
+    -down-> === DashboardActivity ===
+
+    partition calendarActivity #DBEC9E {
+        === DashboardActivity === --> "Select menu >>Calendar<<"
+        --> "C"
+        partition addNewActivity {
+            --> "Click on the date"
+            --> "Add title and time"
+            --> "Done"
+        }
+    }
+
+    if "Do other activity?" then
+    -[#00ff00]up-> [true] "O"
+    else
+    -[#ff0000]-> [false]=== DashboardEnd ===
+    endif
+
+}
+--> "Go to >>Settings<<"
+--> "Logout"
+--> (*)
+@enduml

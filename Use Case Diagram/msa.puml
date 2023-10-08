@@ -1,0 +1,86 @@
+@startuml
+
+scale 1.0
+
+left to right direction
+
+skinparam backgroundColor Linen
+skinparam LegendBackgroundColor Strategy
+skinparam LegendBorderThickness 0
+skinparam LegendFontSize 20
+skinparam Padding 5
+skinparam defaultFontSize 24
+skinparam Nodesep 100
+skinparam ArrowThickness 2
+skinparam shadowing true
+
+skinparam usecase {
+    BackgroundColor PaleGreen
+    BorderColor Green
+    BackgroundColor<<USP>> Pink
+    BorderColor<<USP>> HotPink
+    BorderThickness 2
+    ArrowThickness 2
+    ArrowColor Green
+    ActorBorderColor Green
+}
+
+actor/ Student
+
+note "Student must log in first" as NoteForJoinSession
+
+rectangle "My Study Assist | use-case diagram \n" << Business >> {
+    (Simulate score)/
+    (Access calendar)/
+    (Edit profile)/
+    (Open dashboard)/
+    (Show courses)/
+    (Add to calendar)/
+    (Show courses details)/
+    (Access score list)/
+    (Change password)/
+    (Filter courses)/
+    (Add new score)/
+    (Show score)/
+    (Edit score)/
+    (Delete score)/
+    (Switch language)/
+    (Add new activity)/
+    (Change information details)/
+
+    Student -- NoteForJoinSession
+    Student -- (Access score list)
+    Student -- (Access calendar)
+    Student -- (Edit profile)
+    Student -- (Open dashboard)
+    Student -- (Show courses)
+    Student -- (Switch language)
+    
+    (Show courses) ..> (Show courses details) : <<include>>
+    (Show courses details) <.. (Add to calendar) : <<extend>>
+    (Show courses details) <.. (Filter courses) : <<extend>>
+    (Access score list) ..> (Simulate score) : <<include>>
+    (Edit profile) <.. (Change password) : <<extend>>
+    (Show score) <.. (Add new score) : <<extend>>
+    (Show score) <.. (Edit score) : <<extend>>
+    (Show score) <.. (Delete score) : <<extend>>
+    (Access score list) ..> (Show score) : <<include>>
+    (Access calendar) <.. (Add new activity) : <<extend>>
+    (Edit profile) <.. (Change information details) : <<extend>>
+    (Simulate score) <.. (Add simulation) : <<extend>>
+    (Simulate score) <.. (Edit simulation) : <<extend>>
+    (Simulate score) <.. (Delete simulation) : <<extend>>
+
+}
+
+legend right
+  |  | My Study Assist |
+  | Produktion | [[http://10.48.18.222:8000]] |
+  | Repository | [[https://git.thm.de/dhdd19/notenverwaltung]] |
+  | UML-Tool| PlantUML v1.2019.5|
+  | Ersteller| Linda Andryani|
+  | Mail| linda.septira.andryani@mni.thm.de |
+  | Letzte Änderung| 08.7.2023 |
+end legend
+
+@enduml

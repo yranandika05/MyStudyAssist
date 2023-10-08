@@ -1,0 +1,25 @@
+<div class="modal-header"><h4 class="modal-title">{{"newData" | translate}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()">
+  </button>
+</div>
+<div class="modal-body">
+  <div class="form-group">
+    <label for="codeInput">{{"modalCode" | translate}}</label>
+    <input type="text" class="form-control" id="codeInput" [(ngModel)]="code" placeholder="Code of the course">
+
+    <label for="titleInput">{{"modalTitle" | translate}}</label>
+    <input type="text" class="form-control" id="titleInput" [(ngModel)]="title" placeholder="Name of the course">
+
+    <label for="estimateInput">{{"modalEstimate" | translate}}</label>
+    <input type="text" class="form-control" id="estimateInput" [(ngModel)]="estimate" placeholder="what percentage of score do you wish to have">
+
+    <label for="crpInput">{{"modalCreditPoint" | translate}}</label>
+    <input type="text" class="form-control" id="crpInput" [(ngModel)]="creditPoint" placeholder="Credit Point of the course">
+
+
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss()">{{"modalClose" | translate}}</button>
+  <button type="button" class="btn btn-success" (click)="save()">{{"modalSave" | translate}}</button>
+</div>

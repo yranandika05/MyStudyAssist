@@ -1,0 +1,66 @@
+<div class="container-fluid">
+  <div class="row" style="height: 100%; width: 100%">
+    <div class="col-md-5 col-sm12 smartphone">
+      <div class="text-info">
+        <h1>My Study Assist</h1>
+
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <h1>Plan your Studies</h1>
+            <q> Perfect for your study plan with My Study Assist</q>
+          </div>
+          <div class="mySlides">
+            <h1>Manage your score</h1>
+            <q> Easily manage your score that you have acquire</q>
+          </div>
+          <div class="mySlides">
+            <h1>Have a great uni journey </h1>
+            <q> Easily manage your score that you have acquire</q>
+          </div>
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot" (click)="currentSlide(1)"></span>
+            <span class="dot" (click)="currentSlide(2)"></span>
+            <span class="dot" (click)="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 col-sm-12 d-flex align-items-center justify-content-center" >
+      <div class="login-container ">
+        <h2 class="welcome-text" style="color: #4834d4">WELCOME TO MY STUDY ASSIST</h2>
+        <p class="mb-5">Please enter your account ID and your password</p>
+        <form>
+          <div class="mb-3"> <!--USERNAME-->
+            <label for="uname" class="form-label">Account ID</label>
+            <input type="email" class="form-control border border-primary" id="uname" placeholder="Account ID" #uname required>
+          </div>
+          <div class="mb-3"><!--PASS-->
+            <label for="pass" class="form-label">Password</label>
+            <input type="password" class="form-control border border-primary" id="pass" placeholder="Password" #pass required>
+          </div>
+          <small class="text-danger mt-0" *ngIf="emptyInput">
+           Please insert your account id and your password.
+          </small>
+          <br>
+          <small class="text-danger mt-0" *ngIf="falsePassword">
+            Incorrect account id or password.
+          </small>
+          <br>
+
+          <p class="small"><a class="text-primary" routerLink="/forgotpass">Forgot password?</a></p>
+          <div class="d-grid"><!--SUBMIT BUTTON-->
+            <button class="btn btn-primary" style="font-weight: bold; background-color: #256AA8" type="submit" (click)="auth(uname.value, pass.value)">SIGN IN</button>
+          </div>
+        </form>
+        <div class="mt-3">
+          <p class="mb-0  text-center">Don't have an account?
+            <a class="text-primary fw-bold" routerLink="/registration" >Sign Up</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
