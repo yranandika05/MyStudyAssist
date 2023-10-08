@@ -1,5 +1,61 @@
 # My Study Assist
-The "My Study Assist" is an assistant for students enrolled in MNI subjects at THM. The main purpose of the responsive web application is to make university life easier for students.
+The "My Study Assist" is an assistant for students enrolled in MNI subjects at THM. The main purpose of the responsive web application is to make everyday university life easier for students. Therefore it is possible for students to plan their studies completely and to be informed about possible stumbling blocks. Core elements are also the creation of personalized timetables and the overview of achievements. The topic of grades and achievements is a key focus. Students can view their current as well as future average grades. The achieved credit points and the grade in percent but also the classical average are displayed.
+This task is done in groups of 4. I was in charge of Frontend development and helped a little with Backend.
+
+## Members and roles
+| Member | Role |
+| ------ | ------ |
+| Andryani, Linda Septira | Frontend |
+| Jindra Philipp | Backend |
+| Kirana, Yohanes Ranandika | Frontend |
+| Küchler, Marcel | Backend |
+
+## Features
+Must Have:
+
+- In order to use the features of My Study Assist, there must be a login.
+- There is a page that displays prerequisites or module descriptions of available modules.
+- Add new activity esp. timetable and exam schedule.
+Export grade list in PDF format.
+- Students can add their received grades to the score.
+- Grades can be displayed by percentage or by number.
+- My Study Assist is also fully functional on mobile.
+- Ease of use
+- There are 3 available languages (English, German and Bahasa).
+- Interoperability - e.g. integrate information from different applications of THM: timetable; information about modules.
+- Conformity of functionality - e.g. with data protection standard (DSGVO).
+
+Nice to Have:
+
+- Students can simulate or plan the grades to be received to get the desired grade point average.
+- For comparison between received and simulated grades, the developer has divided under two different tables. One table is the state grade and another is the simulated table.
+- The average of all grades received by students for the corresponding module is displayed. The goal is that students can compare their grade with this average.
+
+## Languages and technologies  
+### Operating system used:
+- Ubuntu 22.04
+
+### Languages used:
+- HTML
+- bootstrap
+- Javascript
+- CSS
+- Typescript
+- Python
+- PSQL
+
+### Technologies used:
+- NodeJS ([https://nodejs.org/en])
+- AngularJS v16 ([https://angular.io/](https://angular.io/))
+- NGINX ([https://www.nginx.com/](https://www.nginx.com/))
+- PostgreSQL ([https://www.postgresql.org/](https://www.postgresql.org/))
+- PgAdmin ([https://www.pgadmin.org/])
+- EmailJS ([https://www.emailjs.com/])
+- DJANGO ([https://www.djangoproject.com/])
+- Docker ([https://www.docker.com/])
+- Font-Awesome ([https://fontawesome.com/])
+- Full-Calendar ([https://fullcalendar.io/])
+- Ubuntu 22.04
 
 ## Preparations
 There are several things that need to be prepared.
