@@ -7,7 +7,7 @@ This task is done in groups of 4. I was in charge of Frontend development and he
 | ------ | ------ |
 | Andryani, Linda Septira | Frontend |
 | Jindra Philipp | Backend |
-| Kirana, Yohanes Ranandika | Frontend |
+| Kirana, Yohanes Ranandika (Me)| Frontend |
 | Küchler, Marcel | Backend |
 
 ## Features
